@@ -1,0 +1,134 @@
+* {
+  font-family:'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+input,
+button {
+  font-family:'Times New Roman', Times, serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 14px;
+  gap: 14px;
+
+    /* Add background styles */
+    background-image: url('https://i.pinimg.com/736x/05/c7/e5/05c7e5039146a2fcc095858937c8f233.jpg'); /* URL to your image */
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+header {
+  padding-top: 7rem;
+  display: flex;
+  align-items: stretch;
+}
+
+header,
+.main {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  gap: 14px;
+}
+
+header input {
+  flex: 1;
+  border-radius: 14px;
+  outline: none;
+  width: 100%;
+}
+
+header button {
+  border-radius: 14px;
+  background: transparent;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+header button:hover {
+  opacity: 0.7;
+}
+
+header button,
+header input {
+  padding: 14px 18px;
+  border: none;
+  outline: none;
+  background-color:rgb(233, 222, 202) 
+}
+
+p {
+  font-size: 0.9em;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px;
+  border-radius: 14px;
+   background-color:rgb(228, 223, 214) 
+
+}
+
+.todoItem p {
+  flex: 1;
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.actionsContainer button {
+  transition-duration: 200ms;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.actionsContainer button:hover {
+  opacity: 0.7;
+}
+
+footer {
+  text-align: right;
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  color: #161616; /* White text */
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+
+@media (min-width: 640px) {
+
+  header button,
+  header input {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
